@@ -21,9 +21,9 @@ Look in the list of repositories to verify the ECR
 
 ![image](AWS_ECR_create.png)
 
-Second option, using the Terraform AWS resource
-Create a terraform file. Ensure to include the AWS provider
-In the terminal prompt, run "terraform init", "terraform plan", "terraform apply" 
+Second option, using the Terraform AWS resource.
+Create a terraform file. Ensure to include the AWS provider.
+In the terminal prompt, run "terraform init", "terraform plan", "terraform apply".
 If all successful, go to AWS Console site then go to Elastic Container Registry service.
 Look in the list of repositories to verify the ECR
 
@@ -44,7 +44,7 @@ Run the following command to push the image into AWS ECR using AWS CLI :
 
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 255945442255.dkr.ecr.us-east-1.amazonaws.com
 
-If you succeessful, it will prompt see "Login Succeeded" and it means it retrieves the authentication token and authenticate the Docker client to
+If it is succeessful, it will prompt see "Login Succeeded" and it means it retrieved the authentication token and authenticate the Docker client to
 the registry. 
 
 Then tag the image in order to push the image to the repository.
